@@ -1,7 +1,7 @@
 /******************
-Name:
-ID:
-Assignment:
+Name: Roei Wald
+ID: 211589791
+Assignment: ex1
 *******************/
 #include <stdio.h>
 
@@ -16,7 +16,7 @@ int main() {
   int number, position;
 
   printf("Please enter a number:\n");
-  scanf("%d" , & number);
+  scanf("%d", & number);
 
   printf("Please enter a position:\n");
   scanf("%d", & position);
@@ -36,7 +36,7 @@ int main() {
   Print the output */
 
   printf("Please enter a number:\n");
-  scanf("%d" , & number);
+  scanf("%d", & number);
 
   printf("Please enter a position:\n");
   scanf("%d", & position);
@@ -56,7 +56,7 @@ int main() {
   Print the new number */
 
   printf("Please enter a number:\n");
-  scanf("%d" , & number);
+  scanf("%d", & number);
 
   printf("Please enter a position:\n");
   scanf("%d", & position);
@@ -72,9 +72,9 @@ int main() {
   If the number is even - print 1, else - print 0. */
 
   printf("Please enter a number:\n");
-  scanf("%d" , & number);
-  int evenodd = ~(number & 1) & 1;
-  printf("%d\n", evenodd);
+  scanf("%d", & number);
+  int even_odd = ~(number & 1) & 1;
+  printf("%d\n", even_odd);
 
 
   // 3, 5, 7, 11
@@ -84,15 +84,15 @@ int main() {
   Print only 4 bits, in positions: 3,5,7,11 in the result. */
   int num1, num2;
 
-  printf(("Please enter the first number (octal):\n"));
+  printf("Please enter the first number (octal):\n");
   scanf("%o", & num1);
 
-  printf(("Please enter the second number (octal):\n"));
+  printf("Please enter the second number (octal):\n");
   scanf("%o", & num2);
 
   int sum = num1 + num2;
 
-  printf("The sun in hexadecimal: %X\n", sum);
+  printf("The sum in hexadecimal: %X\n", sum);
 
   int sum3 = (sum & (1 << 3)) >> 3;
   int sum5 = (sum & (1 << 5)) >> 5;
