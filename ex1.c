@@ -45,8 +45,8 @@ int main() {
 
   int set0 = number & (~(1 << position));
 
-  printf("Number with bit %d det to 1: %d\n", position, set1);
-  printf("Number with bit %d det to 0: %d\n", position, set0);
+  printf("Number with bit %d set to 1: %d\n", position, set1);
+  printf("Number with bit %d set to 0: %d\n", position, set0);
 
 
   // Toggle bit
