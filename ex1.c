@@ -20,12 +20,12 @@ int main() {
   scanf("%d", & position);
 
 
-   /*
-    Extract the bit at the given position:
-    - Shift 1 to the position.
-    - Apply bitwise 'and' to isolate the bit at the position.
-    - Shift the result back to the LSB to get either 1 or 0.
-    */
+  /*
+  Extract the bit at the given position:
+  - Shift 1 to the position.
+  - Apply bitwise 'and' to isolate the bit at the position.
+  - Shift the result back to the LSB to get either 1 or 0.
+   */
   int bit = (number & (1 << position)) >> position;
 
   printf("The bit in position %d of number %d is: %d\n", position, number, bit);
@@ -48,12 +48,12 @@ int main() {
    */
   int set1 = number | (1 << position);
 
-    /*
-    Set the bit at the given position to 0:
-     - Shift 1 to the position.
-     - Apply 'not' to invert it to all 1's except 0 at the position.
-     - Use 'and' with the number to ensure the bit is set to 0.
-     */
+  /*
+  Set the bit at the given position to 0:
+   - Shift 1 to the position.
+   - Apply 'not' to invert it to all 1's except 0 at the position.
+   - Use 'and' with the number to ensure the bit is set to 0.
+   */
   int set0 = number & (~(1 << position));
 
   printf("Number with bit %d set to 1: %d\n", position, set1);
@@ -69,11 +69,11 @@ int main() {
   printf("Please enter a position:\n");
   scanf("%d", & position);
 
-    /*
-    Toggle the bit's value at the given position:
-    - Shift 1 to the position.
-    - Use 'xor' with the number to toggle the bit's value.
-    */
+  /*
+  Toggle the bit's value at the given position:
+  - Shift 1 to the position.
+  - Use 'xor' with the number to toggle the bit's value.
+   */
   int toggle = number ^ (1 << position);
 
   printf("Number with bit %d toggled: %d\n", position, toggle);
@@ -86,11 +86,11 @@ int main() {
   scanf("%d", & number);
 
   /*
-   Check if the number is even (1) or odd (0):
-    - Apply 'and' between the number and 1 to isolate the LSB.
-    - Use 'not' ro invert the result.
+  Check if the number is even (1) or odd (0):
+  - Apply 'and' between the number and 1 to isolate the LSB.
+  - Use 'not' ro invert the result.
       if LSB is 0 (even), the result becomes 1. and the opposite for odd.
-    - Apply another 'and' with 1 to ensure the output is 1 for even, 0 for odd.
+  - Apply another 'and' with 1 to ensure the output is 1 for even, 0 for odd.
    */
   int even_odd = ~(number & 1) & 1;
   printf("%d\n", even_odd);
