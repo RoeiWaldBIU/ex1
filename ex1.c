@@ -8,7 +8,6 @@ Assignment: ex1
 int main() {
 
   // What bit: Check the value of a specific bit at a given position in a given number.
-
   printf("What bit:\n");
 
   int number, position;
@@ -31,8 +30,7 @@ int main() {
   printf("The bit in position %d of number %d is: %d\n", position, number, bit);
 
 
-  // Set bit: Modify a specific bit in the given number to 1 or 0 //
-
+  // Set bit: Modify a specific bit in the given number to 1 or 0.
   printf("\nSet bit:\n");
 
   printf("Please enter a number:\n");
